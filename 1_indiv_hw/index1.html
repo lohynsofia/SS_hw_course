@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <!-- this is comment-->
 
 <h1>Text header 1</h1>
@@ -29,6 +29,8 @@
 <a target="_blank" href="somelink"> target specifies where to open the link</a>
 <!--href="#" - deadlink, can be replaced later-->
 
+<br>
+
 <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Three kittens running towards the camera."></a>
 <!--create a link under the image-->
 
@@ -42,11 +44,23 @@
     <li>ordered list</li>
 </ol>
 
-<input type="text" placeholder="gray text in text field for users"> <!--get input from user, is self-closing-->
+<input type="text" placeholder="gray text in text field for users" required> <!--get input from user, has *required* tag, is self-closing-->
 
 <form action="url-where-you-want-to-submit-form-data">
     <input>
 </form>
 <!--example how to submit data to a server, only HTML needed-->
 
-<button type="submit">this button submits the form</button>
+<button type="submit">button for submission</button>
+
+<input id="indoor" type="radio" name="indoor-outdoor">
+<label for="indoor">Indoor</label>
+<!--This allows assistive technologies to create a linked relationship between the label and the related input element-->
+
+<button type="submit">Submit</button>
+
+<input type="text" value="text"> <!--value should be in any checkbox or radio or such kind of inputs, so it is saved to database with correct interpretaion-->
+
+<input type="radio" checked> <!--checked means that it will be pre-selected when the page loads-->
+
+</html>
